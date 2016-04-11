@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	padding:0; margin:0; background:#666;
+}
+#box{
+	width:500px; height:500px; margin:100px auto;
+	overflow:hidden;
+}
+.boll{
+	width:500px; height:500px;
+	transform-style:preserve-3d;
+	position:relative;
+	transform:rotateX(-20deg) rotateZ(-20deg) rotateY(0deg);
+	animation:move 20s linear infinite;
+}
+
+@keyframes move{
+	to{transform:rotateX(-20deg) rotateZ(-20deg) rotateY(360deg);}
+}
+
+.boll div{
+	width:480px; height:480px;
+	border:10px solid #3366FF; 
+	border-radius:50%;
+	position:absolute;
+}
+.x1{transform:rotateY(0deg);}
+.x2{transform:rotateY(20deg);}
+.x3{transform:rotateY(40deg);}
+.x4{transform:rotateY(60deg);}
+.x5{transform:rotateY(80deg);}
+.x6{transform:rotateY(100deg);}
+.x7{transform:rotateY(120deg);}
+.x8{transform:rotateY(140deg);}
+.x9{transform:rotateY(160deg);}
+
+.y1{transform:rotateX(90deg) scale(0.6)  translateZ(200px);}
+.y2{transform:rotateX(90deg) scale(0.8) translateZ(150px);}
+.y3{transform:rotateX(90deg) scale(0.92) translateZ(100px);;}
+.y4{transform:rotateX(90deg) scale(0.98) translateZ(50px);;}
+.y5{transform:rotateX(90deg) scale(1) translateZ(0);}
+.y6{transform:rotateX(90deg) scale(0.98) translateZ(-50px);}
+.y7{transform:rotateX(90deg) scale(0.92) translateZ(-100px);}
+.y8{transform:rotateX(90deg) scale(0.8) translateZ(-150px);}
+.y9{transform:rotateX(90deg) scale(0.6) translateZ(-200px);}
+</style>
+<meta charset="utf-8">
+<title>立体球</title>
+</head>
+
+<body>
+<div id="box">
+	<div class="boll">
+		<div class="x1"></div>
+		<div class="x2"></div>
+		<div class="x3"></div>
+		<div class="x4"></div>
+		<div class="x5"></div>
+		<div class="x6"></div>
+		<div class="x7"></div>
+		<div class="x8"></div>
+		<div class="x9"></div>
+		<div class="y1"></div>
+		<div class="y2"></div>
+		<div class="y3"></div>
+		<div class="y4"></div>
+		<div class="y5"></div>
+		<div class="y6"></div>
+		<div class="y7"></div>
+		<div class="y8"></div>
+		<div class="y9"></div>
+	</div>
+</div>
+
+<script>
+window.onload=function(){
+	var oBox=document.getElementById("box");
+	
+	var aDiv=oBox.getElementsByTagName("div")[0].getElementsByTagName("div");
+	
+	var arr=[0,1,2,3,4,5,6,7,8,9,"a","b","c","d","e"];
+	
+	change();
+	
+	setInterval(change,2000);
+	
+	function change(){
+		for(var i=0; i<aDiv.length; i++){
+			aDiv[i].style.backgroundColor=getColor();
+			aDiv[i].style.borderColor=getColor();
+		}
+	}
+		
+	function getColor(){
+		var str='#';
+		for(var i=0; i<6; i++){
+			str+=arr[parseInt(Math.random()*15)];
+		}
+		return str;
+	}
+}
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
