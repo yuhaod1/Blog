@@ -1,0 +1,273 @@
+/* CSS Document */
+
+body,h1,h2,h3,p,ul,li,dl,dt,dd,ul{
+	padding:0; 
+	margin:0;
+}
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+img{
+	border:none;
+}
+
+body{
+	background:#fff0d9 url(../images/body_bg.png) repeat-x;
+	font:12px/1.5 "微软雅黑"; 
+ }
+ 
+#container{
+	 width:960px;
+	 margin:0 auto;
+ }
+/*Í·²¿ÑùÊ½*/ 
+.header{
+	width:100%;
+	height:88px;
+	padding:18px 8px 0 0;
+}
+
+.header h1{
+	font-size:100%; 
+	float:left;
+}
+
+.header h1 a{
+	display:block;
+	width:262px;
+	height:66px;
+	background:url(../images/logo.png) no-repeat;
+	text-indent:-9999px;
+}
+
+.header ul{
+	margin-top:20px;
+	float:right;
+}
+
+.header ul li{	
+	float:left;
+	position:relative;
+}
+
+.header ul li a{
+	display:inline-block;
+	width:86px;
+	line-height:30px;
+	text-align:center;
+	font-size:14px;
+	color:#727272;
+}
+
+.header ul li:hover {
+	background-color:#ffab33;
+}
+.header ul li:hover .drap{
+	display:block;
+}
+.header ul li a:hover{
+    color:#fff;
+} 
+.header ul li .drap{
+    width:86px;
+    margin:0;
+    background:#ffab33;
+    position:absolute;
+    left:0;
+    top:30px;
+    z-index:100;
+    display:none;
+}
+/*¹ã¸æÂÖ²¥Ä£¿éÑùÊ½*/
+.ad{
+    width:100%;
+	height:456px;
+	border-top:3px solid #b2b2b2;
+	background-color:#FFF;
+	overflow:hidden;
+	position:relative;
+}
+
+.ad ul{
+	padding:2px 0 0 8px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.ad ul li{
+	padding-bottom:6px;
+}
+/*ÆóÒµÎÄ»¯¿éÑùÊ½*/
+.culture{
+    width:100%;
+	height:246px;
+	padding-top:20px;
+}
+
+.culture h2{
+    font-size:32px;
+	color:#FFF;
+	line-height:56px;
+}
+
+.culture h2 strong{
+	color:#ff9600;
+}
+
+.culture p{
+	font-size:14px;
+	color:#8b8b8b;
+	line-height:24px;
+	text-indent:2em;  
+}
+
+/*²Ëµ¥¿éÑùÊ½*/
+.nav{
+	width:100%;
+}
+.nav ul{
+    width:98%;
+	height:224px;
+	margin:0 auto;
+	border-bottom:1px solid #e8e8e8;
+}
+
+.nav ul li{
+	width:25%;
+	float:left;
+	padding-top:70px;
+	position:relative;
+}
+
+.nav ul li a{
+	display:block;
+	width:120px;
+	height:120px;
+	position:absolute;
+	top:-60px;
+	left:50%;
+	margin-left:-60px;
+	text-indent:-9999px;
+}
+
+.nav ul li .nav_1{background:url(../images/btn.png) no-repeat 0 0; }
+.nav ul li .nav_2{background:url(../images/btn.png) no-repeat -120px 0; }
+.nav ul li .nav_3{background:url(../images/btn.png) no-repeat -240px 0; }
+.nav ul li .nav_4{background:url(../images/btn.png) no-repeat -360px 0; }
+
+.nav ul li .nav_1:hover{background:url(../images/btn.png) no-repeat 0 -120px; }
+.nav ul li .nav_2:hover{background:url(../images/btn.png) no-repeat -120px -120px; }
+.nav ul li .nav_3:hover{background:url(../images/btn.png) no-repeat -240px -120px; }
+.nav ul li .nav_4:hover{background:url(../images/btn.png) no-repeat -360px -120px; }
+
+.nav ul li h3{
+	font-size:16px;
+	line-height:22px;
+	color:#403c36;
+	text-align:center;
+}
+
+.nav ul li p{
+	padding:0 20px;
+	font-size:100%;
+	line-height:20px;
+	color:#9b9b9b;
+	text-align:center;	
+}
+
+/*Í¼Æ¬ÁÐ±íÑùÊ½*/
+.pic_list{
+	width:100%;
+	overflow:hidden;
+}
+
+.pic_list ul{
+	width:1000px;
+	padding-bottom:30px;
+	border-bottom:1px solid #e8e8e8;
+	overflow:hidden;
+}
+
+.pic_list ul li{
+	width:208px;
+	height:150px;
+	padding:6px;
+	margin:30px 26px 0 0;
+	float:left;
+	background:#fff url(../images/pic_bg.png) no-repeat;
+}
+
+/*ÈÈÍÆÄ£¿é*/
+.hot{
+	width:110%;
+	margin-top:40px;
+	padding-bottom:24px;
+	overflow:hidden;
+}
+
+.hot dl{
+    width:272px;
+	height:378px; 
+	margin-right:72px;
+	float:left;
+	position:relative;
+}
+
+.hot dl dd{
+	line-height:20px;
+    color:#9b9b9b; 
+	text-align:center;
+}
+
+.hot dl dd .bigfont{
+	font-size:20px;
+	font-weight:bold;
+	color:#000;
+	line-height:28px;
+}
+
+.hot dl dd .bigfont:hover{
+	color:#ff9701;
+	text-decoration:underline;
+}
+
+.hot dl dd a span{
+	color:#ff9701;
+}
+
+.hot dl .btn{
+	position:absolute;
+	bottom:0;
+	left:50%;
+	margin-left:-68px;
+}
+
+.hot dl .btn a{
+	display:block;
+	width:136px;
+	height:40px;
+	background:url(../images/btn.png) no-repeat -480px 0;
+	text-indent:-9999px;
+}
+
+.hot dl .btn a:hover{
+	background:url(../images/btn.png) no-repeat -480px -40px;;
+}
+
+.footer{
+	width:100%;
+	height:50px;
+	background:#000;
+}
+.footer p{
+    text-align:center;
+    color:#fff;
+    font-size:16px;
+    line-height:30px;
+}
